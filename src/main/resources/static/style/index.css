@@ -1,0 +1,223 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@700&display=swap');
+
+#order-page-box {
+    text-align: center;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Nanum Myeongjo', serif;
+    list-style: none;
+}
+
+a:not(#order-link, #management-link){
+    text-decoration: none;
+    color: black;
+}
+
+/*header*/
+#order-link{
+    text-decoration: none;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    background-color: #F6F1F1;
+    height: 20vh;
+    border-bottom: 3px solid #146C94;
+}
+
+header h1 {
+    display: flex;
+    align-items: center;
+    color: #146C94;
+    font-size: 72px;
+    margin: 20px 40px 10px 100px;
+    cursor: pointer;
+}
+
+header nav {
+    margin: 15px;
+    display: flex;
+    align-items: flex-end;
+}
+
+.md hydrated {
+    color: #146C94;
+    font-size: 30px;
+}
+
+.md hydrated:hover {
+    color: #19A7CE;
+}
+
+header ul {
+    display: flex;
+    align-items: center;
+}
+
+header li {
+    color: #146C94;
+    font-size: 30px;
+    margin: 10px 40px 10px 40px;
+}
+
+header li:hover {
+    color: #19A7CE;
+    cursor: pointer;
+}
+
+/*header-end*/
+section {
+    background-color: #F6F1F1;
+    height: 100vh;
+}
+
+.main {
+    background-image: url("../images/main_image.jpg");
+    background-size: cover;
+    height: 120vh;
+}
+
+/*footer*/
+footer {
+    background-color: #146C94;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 15vh;
+    font-size: 0.8em;
+    color: lightgrey;
+}
+
+footer ul {
+    margin: 10px;
+}
+
+footer a {
+    color: lightgrey;
+}
+
+address {
+    text-align: center;
+}
+
+/*footer-end*/
+
+/* section inner info-banner */
+.info-banner {
+    width: 100%;
+    height: 300px;
+    background-image: url("../images/info-banner.jpg");
+    opacity: 0.5;
+}
+
+.subject {
+    width: 100%;
+    height: 80px;
+    line-height: 80px;
+    text-align: center;
+    font-size: 50px;
+    margin-bottom: 15px;
+    background-color: lightsteelblue;
+}
+
+.order-table {
+    margin: 20px auto 20px auto;
+    font-size: 20px;
+    text-align: center;
+}
+
+thead th {
+    padding: 5px;
+    border-bottom-style: solid;
+    background-color: lightsteelblue;
+}
+
+tbody td {
+    padding: 5px;
+}
+
+.order-code, .order-status, .order-detail, .order-review, .order-num {
+    width: 10%;
+}
+
+.order-order-date, .order-payment-date, .order-collection-date, .order-delivery-date, .order-subtotal, .order-price, .order-category {
+    width: 15%;
+}
+
+.order-subclassification {
+    width: 35%;
+}
+
+input[type="button"] {
+    font-size: 20px;
+    border: 0;
+    background-color: #403C3B;
+    color: #fff;
+    padding: 10px;
+    cursor: pointer;
+}
+
+#orderdetail-table {
+    margin: 10px auto 10px auto;
+}
+
+#total-price {
+    text-align: center;
+    font-size: 20px;
+}
+
+button {
+    border: 0;
+    background-color: #403C3B;
+    color: #fff;
+    padding: 10px;
+    cursor: pointer;
+}
+
+#payment {
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+}
+
+.payment-fail-container, .payment-success-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#payment-div{
+    display: flex;
+    justify-content: center;
+}
+
+#payment-form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
+    margin-top: 3%;
+    border: 1px solid gray;
+    width: 40%;
+    padding: 2%;
+}
+
+#payment-form p{
+    font-size: 1.4em;
+}
+
+#client-name{
+    font-size: 15px;
+}
+
+#client-icon{
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+}
+
+
+

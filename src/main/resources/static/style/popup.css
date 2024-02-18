@@ -1,0 +1,26 @@
+.tabnav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.tabnav li {
+    float: left;
+}
+
+.tabnav li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.tabnav li a:hover {
+    background-color: #ddd;
+}
+
+.tabnav li a.active {
+    background-color: #ddd;
+}

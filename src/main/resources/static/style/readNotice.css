@@ -1,0 +1,39 @@
+section{
+    height: auto;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    gap: 150px;
+}
+#contents-container{
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    gap: 20px;
+    width: 55%;
+}
+.title{
+    padding-bottom: 10px;
+    font-weight: bold;
+    font-size: 1.5em;
+    line-height: 1.5em;
+    border-bottom: 5px solid #403C3B;
+}
+.modDate{
+    text-align: end;
+}
+#button-box{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    margin-left: 62%;
+    margin-bottom: 10px;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 500px;
+}

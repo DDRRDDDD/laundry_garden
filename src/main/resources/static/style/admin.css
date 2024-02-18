@@ -1,0 +1,41 @@
+.admin {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+/*orders.jsp*/
+#search-detail {
+    margin: 10px;
+}
+
+#search-detail input[type=number] {
+    width: 80px;
+}
+
+#search-detail input[type=date] {
+    width: 100px;
+}
+
+#order-table {
+    border-collapse: collapse;
+    /*width: 100%;*/
+}
+
+#order-table td, #order-table th {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+}
+
+#order-table tr:nth-child(even){background-color: #f2f2f2;}
+
+#order-table .orders:hover {background-color: #ddd;}
+
+#order-table th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #4CAF50;
+    color: white;
+}
+

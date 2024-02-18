@@ -1,0 +1,67 @@
+#info-section{
+    background-color: #F6F1F1 ;
+    height: auto;
+}
+
+.item-container {
+    display: flex;
+    margin: 0 auto;
+    width: 80%;
+    flex-direction: column;
+    align-items: center;
+}
+
+.item {
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+    margin: 20px 0;
+    border-bottom-style: solid;
+    width: 90%;
+}
+
+.item-kind {
+    width: 75%;
+    text-align: left;
+}
+
+.item-price {
+    width: 25%;
+    text-align: right;
+}
+
+.category {
+    margin: 0 20px;
+    width: 55%;
+}
+
+.subclassification {
+    margin: 0 20px;
+    width: 35%;
+}
+
+.category-kind {
+    margin: 10px 0 40px;
+}
+
+.category-kind p {
+    text-align: left;
+    font-size: 50px;
+}
+
+.category-info p {
+    text-align: left;
+    font-size: 30px;
+}
+
+th {
+    font-size: 25px;
+    padding: 10px;
+    border-bottom: 1px black solid;
+}
+
+td {
+    font-size: 20px;
+    padding: 10px;
+    border-bottom: 0.5px black solid;
+}

@@ -1,0 +1,54 @@
+plugins {
+    id 'java'
+    id 'war'
+    id 'org.springframework.boot' version '2.7.12-SNAPSHOT'
+    id 'io.spring.dependency-management' version '1.0.15.RELEASE'
+}
+
+group = 'com.example'
+version = '0.0.1-SNAPSHOT'
+sourceCompatibility = '11'
+
+configurations {
+    compileOnly {
+        extendsFrom annotationProcessor
+    }
+}
+
+repositories {
+    mavenCentral()
+    maven { url 'https://repo.spring.io/milestone' }
+    maven { url 'https://repo.spring.io/snapshot' }
+}
+
+dependencies {
+    implementation 'org.springframework.boot:spring-boot-starter-web'
+    implementation 'io.springfox:springfox-boot-starter:3.0.0'
+    implementation 'io.springfox:springfox-swagger-ui:3.0.0'
+    implementation 'com.google.code.gson:gson:2.10.1'
+    compileOnly 'org.projectlombok:lombok'
+    annotationProcessor 'org.projectlombok:lombok'
+    providedRuntime 'org.springframework.boot:spring-boot-starter-tomcat'
+    testImplementation 'org.springframework.boot:spring-boot-starter-test'
+    implementation 'org.springframework.boot:spring-boot-starter-validation'
+
+    // jsp 사용위한 의존성 추가
+    implementation 'org.apache.tomcat.embed:tomcat-embed-jasper:9.0.69'
+    implementation 'javax.servlet:jstl:1.2'
+    implementation 'taglibs:standard:1.1.2'
+
+    // mysql connector
+    implementation 'mysql:mysql-connector-java:8.0.28'
+
+    // spring jpa : DAO가 대체할 친구
+    implementation 'org.springframework.boot:spring-boot-starter-data-jpa:2.7.5'
+
+    // Firebase SDK implementation
+    implementation 'com.google.firebase:firebase-admin:9.1.1'
+
+
+}
+
+tasks.named('test') {
+    useJUnitPlatform()
+}
